@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django301</title>
+</head>
+<body>
+    <h1>It Works</h1>
+    <ul>
+    {% if persons %}
+        {% for person in persons %}
+        <li>{{ person.name }}</li>
+        {% endfor %}
+    {% else %}
+        <p>Empty</p>
+    {% endif %}
+    </ul>
+</body>
+</html>

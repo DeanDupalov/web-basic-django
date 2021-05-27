@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Person</title>
+</head>
+<body>
+<div class="container">
+    <form method="POST" action="{% url 'create person' %}" class="site-form"> {% csrf_token %}
+        {{ form.as_p }}
+        <label for="test">
+            <input type="submit" value="Save" id="test">
+        </label>
+    </form>
+</div>
+
+
+</body>
+</html>
