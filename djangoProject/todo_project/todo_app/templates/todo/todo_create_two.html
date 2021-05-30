@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Create A Todo</title>
+</head>
+<body>
+<div class="container">
+    <form method="POST" action="" class="site-form"> {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save" id="test">
+        {#            <label for="todo-title">#}
+        {#                Title#}
+        {#                <input class="todo-title" type="text" name="Title" id="todo-title">#}
+        {#            </label>#}
+        {#            <label for="todo-description">#}
+        {#                Description#}
+        {#                <input class="todo-description" type="text" name="Description" id="todo-description">#}
+        {#                <textarea class="todo-description" name="" cols="20" rows="5" placeholder="More information..."></textarea>#}
+        {#            </label>#}
+        {#            <label>#}
+        {##}
+        {#                <input type="checkbox" checked>#}
+        {#                Is done#}
+        {#            </label>#}
+
+
+    </form>
+</div>
+</body>
+</html>

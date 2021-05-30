@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style_task_todo.css' %}">
+    <title>Register</title>
+</head>
+<body>
+<div class="container">
+    <main class="sit-main">
+        <h1 class="site-main-title">Register</h1>
+        <form method="post" class="site-form" action="{% url 'register' %}"> {% csrf_token %}
+            <p class="list-item"><span>Name:</span> {{ form.name }}</p>
+            {{ form.name.errors }}
+            <p class="list-item"><span>Age:</span> {{ form.age }}</p>
+            <p class="list-item"><span>Email:</span> {{ form.email }}</p>
+            <p class="list-item"><span>Password:</span> {{ form.password }}</p>
+            <p class="list-item"><span>Text:</span> {{ form.text }}</p>
+            <label for="reg">
+                <input type="submit" value="Save" id="reg" class="btn-btn">
+            </label>
+            <a href="{% url 'landing'%}" class="btn-btn">Back</a>
+        </form>
+    </main>
+</div>
+</body>
+</html>
