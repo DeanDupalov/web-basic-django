@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'todo_project',
     'todo_app',
     'tasks_todo',
+    'books',
 ]
 
 MIDDLEWARE = [
