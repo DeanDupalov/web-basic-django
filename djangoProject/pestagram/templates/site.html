@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Petstagram</title>
@@ -9,8 +8,17 @@
     <link rel="icon" type="image/png" href="https://pluspng.com/img-png/instagram-png-instagram-png-icon-1024.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
+    <style>
+        .sub-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
+        .row {
+            margin: 0 0 1em;
+        }
+    </style>
+</head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:2%">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -21,9 +29,6 @@
         <ul class="navbar-nav">
             <a class="nav-link" href="{% url 'landing page' %}">Home</a>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'list pets' %}">All pets photos</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#">Login</a>
             </li>
             <li class="nav-item">
@@ -33,50 +38,9 @@
     </div>
 </nav>
 <div class="container">
-    <div class="d-flex">
-        <div class="d-inline p-2 w-50">
-            <img src="{{ pet.image_url }}" class="w-50 rounded mx-auto d-block">
-        </div>
-        <div class="d-inline p-2 w-50">
-            <div class="d-flex justify-content-between">
-                <h5><u>Type:</u> {{ pet.type }}</h5>
-                <h5><u>Name:</u> {{ pet.name }}</h5>
-                <h5><u>Age:</u> {{ pet.age }}</h5>
-            </div>
-            <p class="mt-2">Description: {{ pet.description }}</p>
-            <div>
-                <a href="{% url 'edit pet' pet.id %}" class="btn btn-primary mx-auto">Edit</a>
-                <a href="{% url 'delete pet' pet.id %}" class="btn btn-danger mx-auto">Delete</a>
-            </div>
-            <a href="{% url 'pet like' pet.id %} "><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-            <p class="mt-2">Likes: {{ pet.like_count }}</p>
-        </div>
-    </div>
-    <div class="d-block" style="background-color: #f1e3e3; padding:2%">
-        {% if pet.comment_set.count > 0 %}
-            {% for comment in pet.comment_set.all %}
-                <div class="box">
-                    <h5><em>{{ comment.text }}</em></h5>
-                    <hr>
-                </div>
-            {% endfor %}
-        {% else %}
-            <div class="box">
-                <h3>There are no comments for this pet. </h3>
-            </div>
-        {% endif %}
-        <div class="box">
-            <form method="post" action="{% url 'pet detail' pet.id %}">
-                {% csrf_token %}
-                <div class="form-group">
-                    <label for="id_comment">Comment</label>
-                    {{ form.comment }}
-                </div>
-                <button class="btn btn-primary mt-2" type="submit">Add comment</button>
-            </form>
-        </div>
-    </div>
+    {% block site-main %}
 
+    {% endblock %}
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -88,5 +52,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-
+</body>
 </html>

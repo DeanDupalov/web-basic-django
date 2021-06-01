@@ -27,6 +27,7 @@
             {{ form.author }}
         </div>
         <button type="submit" class="btn btn-primary mx-auto">Edit</button>
+{#        <a href="{% url 'delete book' book.id %}" class="btn btn-primary mx-auto">Edit</a>#}
         <a href="{% url 'delete book' book.id %}" class="btn btn-danger mx-auto">Delete</a>
 
     </form>

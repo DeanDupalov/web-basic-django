@@ -20,9 +20,8 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <a class="nav-link" href="{% url 'landing page' %}">Home</a>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'list pets' %}">All pets photos</a>
-            </li>
+            <a class="nav-link" href="{% url 'list pets' %}">All Pet Photos</a>
+            <a class="nav-link" href="{% url 'creat pet' %}">Add Pet Photo</a>
             <li class="nav-item">
                 <a class="nav-link" href="#">Login</a>
             </li>
@@ -33,50 +32,38 @@
     </div>
 </nav>
 <div class="container">
-    <div class="d-flex">
-        <div class="d-inline p-2 w-50">
-            <img src="{{ pet.image_url }}" class="w-50 rounded mx-auto d-block">
-        </div>
-        <div class="d-inline p-2 w-50">
-            <div class="d-flex justify-content-between">
-                <h5><u>Type:</u> {{ pet.type }}</h5>
-                <h5><u>Name:</u> {{ pet.name }}</h5>
-                <h5><u>Age:</u> {{ pet.age }}</h5>
-            </div>
-            <p class="mt-2">Description: {{ pet.description }}</p>
-            <div>
-                <a href="{% url 'edit pet' pet.id %}" class="btn btn-primary mx-auto">Edit</a>
-                <a href="{% url 'delete pet' pet.id %}" class="btn btn-danger mx-auto">Delete</a>
-            </div>
-            <a href="{% url 'pet like' pet.id %} "><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-            <p class="mt-2">Likes: {{ pet.like_count }}</p>
-        </div>
-    </div>
-    <div class="d-block" style="background-color: #f1e3e3; padding:2%">
-        {% if pet.comment_set.count > 0 %}
-            {% for comment in pet.comment_set.all %}
-                <div class="box">
-                    <h5><em>{{ comment.text }}</em></h5>
-                    <hr>
-                </div>
-            {% endfor %}
-        {% else %}
-            <div class="box">
-                <h3>There are no comments for this pet. </h3>
-            </div>
-        {% endif %}
-        <div class="box">
-            <form method="post" action="{% url 'pet detail' pet.id %}">
+    <h1 class="text-center">Add new pet photo</h1>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <form method="post" class="furniture-form">
                 {% csrf_token %}
+                {{ form.errors }}
                 <div class="form-group">
-                    <label for="id_comment">Comment</label>
-                    {{ form.comment }}
+                    <label for="id_type">Type</label>
+                    {{ form.type }}
                 </div>
-                <button class="btn btn-primary mt-2" type="submit">Add comment</button>
+                <div class="form-group">
+                    <label for="id_name">Name</label>
+                    {{ form.name }}
+                </div>
+                <div class="form-group">
+                    <label for="id_age">Age</label>
+                    {{ form.age }}
+                </div>
+                <div class="form-group">
+                    <label for="id_description">Description</label>
+                    {{ form.description }}
+                </div>
+                <div class="form-group">
+                    <label for="id_image_url">Image url</label>
+                    {{ form.image_url }}
+                </div>
+                <button class="btn btn-primary mt-2" type="submit">Create</button>
             </form>
         </div>
+        <div class="col-lg-3"></div>
     </div>
-
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -88,5 +75,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+</body>
 
 </html>
