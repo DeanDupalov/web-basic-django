@@ -797,7 +797,7 @@ false Zulu
     <database id="4" parent="1" name="pestagram_db">
       <ObjectId>17042</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>912</IntrospectionStateNumber>
+      <IntrospectionStateNumber>934</IntrospectionStateNumber>
       <Relations>sequence|table|17043|17045|1
 sequence|table|17054|17056|1
 sequence|table|17064|17066|1
@@ -905,7 +905,7 @@ UC/10
 </Acl>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>915</IntrospectionStateNumber>
+      <IntrospectionStateNumber>935</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="21" parent="4" name="plpgsql">
@@ -110465,11 +110465,11 @@ permission_id</ColNames>
       <DefaultExpression>nextval(&apos;common_comment_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="16210" parent="5176" name="comment">
+    <column id="16210" parent="5176" name="text">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>889</StateNumber>
+      <StateNumber>916</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="16211" parent="5176" name="pet_id">

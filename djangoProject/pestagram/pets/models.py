@@ -24,6 +24,9 @@ class Pet(models.Model):
     def __str__(self):
         return f'{self.name}, Type: {self.type}, Age: {self.age}'
 
+    class Meta:
+        verbose_name_plural = 'pets'
+
 
 class Like(models.Model):
     pet = models.ForeignKey(Pet, on_delete=models.CASCADE)
