@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {#    <link rel="stylesheet" href="{% static 'css/templates_advanced/site.css' %}">#}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    {% block stiles %}{% endblock %}
+    {% block head-scrips %}{% endblock %}
+
+    <title>{% block site-title %}Templates Advanced{% endblock %}</title>
+</head>
+<body>
+{% block body-start-scrips %}{% endblock %}
+<header class="site-header">
+{#    <nav class="site-nav">#}
+{#        <ul>#}
+{#            <li><a href="#">Home</a></li>#}
+{#            <li><a href="#">About</a></li>#}
+{#            <li><a href="#">Contacts</a></li>#}
+{#        </ul>#}
+{#    </nav>#}
+    {% include 'templates_advanced/partials/navigation.html' %}
+</header>
+<main class="site-main">
+    <div class="container">
+        {% block site-content %}
+            Default Site content
+        {% endblock %}
+    </div>
+</main>
+{% block body-end-scrips %}{% endblock %}
+</body>
+</html>

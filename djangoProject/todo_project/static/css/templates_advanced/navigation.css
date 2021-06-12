@@ -1,0 +1,21 @@
+.site-nav {
+    text-align: right;
+    padding-top: 0.5em;
+}
+
+.site-nav ul li {
+    display: inline-block;
+}
+
+.site-nav a {
+    display: block;
+    padding: 0.5em 1em;
+    background: #EEE;
+    color: #333;
+    text-decoration: none;
+}
+.site-nav a:hover {
+    background: skyblue;
+    color: #FFF;
+}
+

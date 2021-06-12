@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('todo_app.urls')),
     path('profiles/', include('tasks_todo.urls')),
     path('books/', include('books.urls')),
+    path('templates/', include('templates_advanced.urls')),
 ]

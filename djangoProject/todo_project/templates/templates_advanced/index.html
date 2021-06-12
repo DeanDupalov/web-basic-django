@@ -1,0 +1,17 @@
+{% extends 'templates_advanced/shared/base.html'%}
+{% load static %}
+
+{% block stiles %}
+    # стиловете който ни трябва да заредим ги слагаме в този блок
+    <link rel="stylesheet" href="{% static 'templates_advanced/layout.css' %}">
+{% endblock %}
+{% block site-title %}
+    My Site
+{% endblock %}
+{% block site-content%}
+    <ul>
+    {% for item_entry in items %}
+        {% include 'templates_advanced/partials/item_info.html' with item=item_entry %}
+    {% endfor %}
+    </ul>
+{% endblock %}
