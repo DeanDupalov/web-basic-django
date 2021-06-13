@@ -1,5 +1,6 @@
 {% extends 'templates_advanced/shared/base.html'%}
 {% load static %}
+{% load bootstrap_form %}
 
 {% block stiles %}
     # стиловете който ни трябва да заредим ги слагаме в този блок
@@ -9,6 +10,8 @@
     My Site
 {% endblock %}
 {% block site-content%}
+    {% bootstrap_form form=form method='post' action='my-action' %}
+  
     <ul>
     {% for item_entry in items %}
         {% include 'templates_advanced/partials/item_info.html' with item=item_entry %}
