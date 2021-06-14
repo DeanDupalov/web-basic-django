@@ -11,7 +11,7 @@
 {% endblock %}
 {% block site-content%}
     {% bootstrap_form form=form method='post' action='my-action' %}
-  
+
     <ul>
     {% for item_entry in items %}
         {% include 'templates_advanced/partials/item_info.html' with item=item_entry %}
