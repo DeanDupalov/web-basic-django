@@ -1,3 +1,7 @@
+from os.path import join, isfile
+
+from django.conf import settings
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 from resources.forms import PetForm
@@ -25,3 +29,13 @@ def index_pets(request):
             'form': form,
         }
         return render(request, 'pets/index_pets.html', context)
+
+
+def get_private_file(request, path_to_file):
+    full_path = join(settings.MEDIA_ROOT, 'private', path_to_file)
+    if isfile(full_path):
+        file = open(full_path, 'rb')
+        response = HttpResponse(content=file)
+        response['Content-Disposition'] = 'attachment'
+        return response
+    return None
