@@ -1,13 +1,15 @@
-{% extends 'site.html' %}
-{% block site-main %}
+{% extends 'shared/base.html' %}
+
+{% block site-content %}
 <h1 class='text-center'>All pet photos</h1>
-<div class="sub-container">
+<div class="container">
     {% if pet %}
+        <div class="row">
         {% for p in pet %}
-            <div class="row">
+
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ p.image_url }}" class="card-img-top" alt="...">
+                        <img src="{{ p.image_url.url }}" class="card-img-top" alt="photo">
                         <div class="card-body">
                             <h5 class="card-title">{{ p.type }} {{ p.name }}, Age: {{ p.age }}</h5>
                             <p class="card-text">{{ p.description }}</p>
@@ -15,10 +17,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
         {% endfor %}
+        </div>
     {% else %}
         <h2>NO Pets</h2>
     {% endif %}
 </div>
-{% endblock site-main %}
+{% endblock  %}

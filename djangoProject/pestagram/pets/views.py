@@ -51,6 +51,7 @@ def pet_detail_view(request, pk):
         }
         return render(request, 'pets/pet_detail.html', context)
 
+
 def like_pet_detail_view(request, pk):
     pet = Pet.objects.get(pk=pk)
     like = Like()
@@ -68,7 +69,7 @@ def create_pet_view(request):
         return render(request, 'pet_create.html', context)
 
     else:
-        form = PetCreateForm(request.POST)
+        form = PetCreateForm(request.POST, request.FILES)
         if form.is_valid():
             pet = form.save()
             pet.save()
@@ -105,4 +106,3 @@ def delete_pet_view(request, pk):
     pet = Pet.objects.get(pk=pk)
     pet.delete()
     return redirect('list pets')
-
