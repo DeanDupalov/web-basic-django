@@ -5,6 +5,7 @@ from django.views.decorators.http import require_POST
 
 from common.forms import CommentForm
 from common.models import Comment
+from core.clean_up import clean_image_files
 from pets.forms import PetCreateForm
 from pets.models import Pet, Like
 
@@ -91,8 +92,12 @@ def edit_pet_view(request, pk):
         return render(request, 'pet_edit.html', context)
 
     else:
-        form = PetCreateForm(request.POST, instance=pet)
+        old_image = pet.image
+        form = PetCreateForm(request.POST, request.FILES, instance=pet)
+
         if form.is_valid():
+            if old_image:
+                clean_image_files(old_image.path)
             pet = form.save()
             pet.save()
             return redirect('list pets')
