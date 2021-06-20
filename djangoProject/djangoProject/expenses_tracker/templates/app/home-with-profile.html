@@ -1,0 +1,10 @@
+{% extends 'app/base.html' %}
+
+{% block site-content %}
+
+    {% include 'app/partials/expenses_list.html' %}
+
+    <h1>My Expenses</h1>
+    <a class="button add" href="{% url 'create expense' %}">Add Expense</a>
+    {% include 'app/partials/expense_container.html' %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %}
+{% block site-content %}
+    <h1>Edit Expense</h1>
+    <div class="form">
+        <form method="POST" enctype="multipart/form-data" action="{% url 'edit expense' expense.id %}">
+            {% include 'app/partials/expense_form.html' %}
+
+
+            <input type="submit" value="Edit">
+        </form>
+    </div>
+{% endblock %}

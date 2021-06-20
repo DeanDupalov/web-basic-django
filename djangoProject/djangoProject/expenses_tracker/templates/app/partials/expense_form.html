@@ -1,0 +1,17 @@
+{% csrf_token %}
+{{ form.errors }}
+
+{{ form.title.label_tag }}
+{{ form.title }}
+
+{{ form.description.label_tag }}
+{{ form.description }}
+
+{{ form.image.label_tag }}
+<p>{{ form.image }}</p>
+
+{{ form.price.label_tag }}
+{{ form.price }}
+
+{{ form.profile.label_tag }}
+{{ form.profile }}

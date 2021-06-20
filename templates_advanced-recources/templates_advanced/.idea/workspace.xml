@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b9a3245-44e9-4adb-855d-914c9c15be64" name="Default Changelist" comment="" />
+    <list default="true" id="7b9a3245-44e9-4adb-855d-914c9c15be64" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../djangoProject/djangoProject/expenses_tracker/expenses_tracker/app/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +79,8 @@
       <workItem from="1623692782660" duration="7267000" />
       <workItem from="1623868001041" duration="1829000" />
       <workItem from="1623872958698" duration="215000" />
+      <workItem from="1624117612393" duration="2459000" />
+      <workItem from="1624184279738" duration="117000" />
     </task>
     <servers />
   </component>

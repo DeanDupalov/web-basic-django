@@ -1,0 +1,24 @@
+<div class="expenses-container">
+
+    {% if expenses %}
+        {% for expense in expenses %}
+            <div class="expense-container">
+                <h2>{{ expense.title }}</h2>
+                <hr>
+                <img src="{{ expense.image.url }}">
+                <p>{{ expense.description }}</p>
+                <div class="expense-detail">
+                    <div>
+                        <p>Price: {{ expense.price }}$</p>
+                    </div>
+                    <div class="right">
+                        <a class="button edit" href="{% url 'edit expense' expense.id %}">Edit</a>
+                        <a class="button delete" href="{% url 'delete expense' expense.id %}">Delete</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h1>NO Expenses</h1>
+    {% endif %}
+</div>

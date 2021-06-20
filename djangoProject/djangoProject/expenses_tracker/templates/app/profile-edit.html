@@ -1,0 +1,14 @@
+
+{% extends 'app/base.html' %}
+
+{% block site-content%}
+    <h1>Enter your new data</h1>
+    <div class="form">
+        <form method="POST" enctype="multipart/form-data" action="{% url 'edit profile' %}">
+            {% include 'app/partials/profile_form.html' %}
+
+
+            <input type="submit" value="Edit">
+        </form>
+    </div>
+{% endblock %}
