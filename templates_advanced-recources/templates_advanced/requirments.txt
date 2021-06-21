@@ -1,6 +1,13 @@
+appdirs==1.4.4
 asgiref==3.3.4
-Django==3.2.2
+distlib==0.3.1
+Django==3.2.3
+filelock==3.0.12
 Pillow==8.2.0
-psycopg2==2.8.6
+psycopg2==2.9.1
 pytz==2021.1
+pywin32==300
+six==1.15.0
 sqlparse==0.4.1
+virtualenv==20.4.2
+virtualenvwrapper-win==1.2.6

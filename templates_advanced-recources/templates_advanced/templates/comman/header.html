@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="navbar-brand">PythonsWiki</div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -13,6 +12,16 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'create' %}">Add new Python</a>
             </li>
+
         </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+                {% if user.is_authenticated %}
+                    Hello {{ user.username }}! <a class="nav-link" href="{% url 'logout view' %}">Logout</a>
+                {% else %}
+                    <a class="nav-link" href="{% url 'login view' %}">Login</a>
+                {% endif %}
+
+        </div>
     </div>
 </nav>

@@ -11,7 +11,7 @@
             <p>In your profile you can edit your profile data</p>
             <div class="expense-detail">
                 <div>
-                    <p>Budget Left: 100.0$</p>
+                    <p>Budget Left: {{ profile.budget }}$</p>
                 </div>
                 <div class="right">
                     <a class="button edit" href="{% url 'edit profile' %}">Edit Profile</a>
