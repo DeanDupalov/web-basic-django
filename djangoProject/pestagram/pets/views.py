@@ -109,5 +109,12 @@ def edit_pet_view(request, pk):
 
 def delete_pet_view(request, pk):
     pet = Pet.objects.get(pk=pk)
-    pet.delete()
-    return redirect('list pets')
+    if request.method == 'GET':
+
+        context = {
+            'pet': pet,
+        }
+        return render(request, 'pet_delete.html', context)
+    else:
+        pet.delete()
+        return redirect('list pets')

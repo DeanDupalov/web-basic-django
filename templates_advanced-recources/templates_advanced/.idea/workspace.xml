@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b9a3245-44e9-4adb-855d-914c9c15be64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python_auth/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/expenses_tracker/templates/app/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/djangoProject/expenses_tracker/templates/app/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/templates_advanced.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/templates_advanced.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythons_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythons_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythons_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythons_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirments.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/comman/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/comman/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_advanced/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates_advanced/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +84,7 @@
       <workItem from="1624199831548" duration="1748000" />
       <workItem from="1624201684898" duration="106000" />
       <workItem from="1624201800437" duration="146000" />
-      <workItem from="1624202017884" duration="2438000" />
+      <workItem from="1624202017884" duration="3386000" />
     </task>
     <servers />
   </component>
