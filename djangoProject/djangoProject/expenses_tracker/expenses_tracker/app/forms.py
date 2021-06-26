@@ -1,5 +1,7 @@
 from django import forms
+from django.core.exceptions import ValidationError
 
+from core.utiles import get_profile
 from expenses_tracker.app.models import Expense, Profile
 
 
@@ -14,6 +16,12 @@ class ExpenseForm(forms.ModelForm):
         model = Expense
         fields = '__all__'
 
+    def clean_price(self):
+        profile = get_profile()
+        price = float(self.cleaned_data['price'])
+        if profile.budget_left < price:
+            raise ValidationError('Not enough budget!')
+        return price
 
 class DisabledFormMixin:
     def __init__(self):

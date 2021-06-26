@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
 
 from core.clean_up import clean_image_files
+from core.utiles import get_profile
 from expenses_tracker.app.forms import ExpenseForm, ProfileForm, DeleteExpenseForm
 from expenses_tracker.app.models import Profile, Expense
 
@@ -11,9 +12,7 @@ from expenses_tracker.app.models import Profile, Expense
 def index(request):
     if Profile.objects.exists():
         expenses = Expense.objects.all()
-        profile = Profile.objects.all()[0]
-        expenses_cost = sum([ex.price for ex in expenses])
-        profile.budget_lef = profile.budget - expenses_cost
+        profile = get_profile()
 
         context = {
             'profile': profile,
@@ -141,4 +140,3 @@ def delete_profile(request):
             clean_image_files(old_image.path)
         profile.delete()
         return redirect('home page')
-
