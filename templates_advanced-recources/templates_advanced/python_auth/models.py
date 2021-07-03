@@ -7,3 +7,7 @@ class UserProfile(models.Model):
     date_of_birth = models.DateTimeField()
     profile_image = models.ImageField(upload_to='profiles')
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+
+
+

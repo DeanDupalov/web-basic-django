@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block site_content %}
+    {% load bootstrap4 %}
+
+    <h1 class="text-center">Login</h1>
+    <div class="row d-flex justify-content-center">
+        <form method="post" class="form"  action="{% url 'login user' %}">
+            {% csrf_token %}
+            {% bootstrap_form login_form %}
+
+            {% buttons %}
+
+                <button type="submit" class="btn btn-primary"> Login</button>
+                <span> or <a class="btn btn-primary" href="{% url 'register user' %}">Creat Profile</a></span>
+            {% endbuttons %}
+        </form>
+
+    </div>
+
+{% endblock site_content %}
