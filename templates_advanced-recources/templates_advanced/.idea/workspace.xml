@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b9a3245-44e9-4adb-855d-914c9c15be64" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cbv/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pythons_app/migrations/0004_python_created_by.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636/storage_v2/_src_/database/python_wiki_db.Cp90BA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636/storage_v2/_src_/database/python_wiki_db.Cp90BA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_auth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_auth/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_auth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_auth/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/comman/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/comman/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythons_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythons_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythons_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythons_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/python_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/python_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates_advanced/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates_advanced/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates_advanced/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates_advanced/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -94,7 +96,7 @@
       <workItem from="1624202017884" duration="3386000" />
       <workItem from="1624899812996" duration="8411000" />
       <workItem from="1625073018293" duration="27000" />
-      <workItem from="1625163043006" duration="4453000" />
+      <workItem from="1625163043006" duration="14724000" />
     </task>
     <servers />
   </component>

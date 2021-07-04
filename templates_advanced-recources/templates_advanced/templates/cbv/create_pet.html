@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block site_content %}
+    <form method="post" enctype="multipart/form-data" action="{% url 'cbv python create' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+    <button class="btn btn-primary">Create</button>
+
+    </form>
+{% endblock %}

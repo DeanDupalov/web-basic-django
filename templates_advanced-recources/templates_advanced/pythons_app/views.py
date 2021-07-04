@@ -5,9 +5,15 @@ from .models import Python
 
 
 # Create your views here.
-def index(req):
+def index(request):
     pythons = Python.objects.all()
-    return render(req, 'index.html', {'pythons': pythons})
+    """
+        Добавихем функционалност само потребителя който е добавил питона да може да го изтрива!
+        Тук и в темплейта
+    """
+    for python in pythons:
+        python.can_delete = python.created_by_id == request.user.id
+    return render(request, 'index.html', {'pythons': pythons})
 
 
 def create(req):
@@ -16,7 +22,7 @@ def create(req):
         return render(req, 'create.html', {'form': form})
     else:
         form = PythonCreateForm(req.POST, req.FILES)
-        print(form)
+
         if form.is_valid():
             python = form.save()
             python.save()

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     'python_auth',
     'bootstrap4',
+    'cbv',
 
 ]
 

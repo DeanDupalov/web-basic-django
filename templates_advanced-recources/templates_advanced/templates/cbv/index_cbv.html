@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block site_content %}
+    <h1>{{ heading_data }}</h1>
+    <a href="{% url 'cbv python create' %}">Create Python</a>
+    {% for python in pythons %}
+        <li> <a href="{% url 'cbv python detail'  python.id%}">Python Details</a></li>
+    {% endfor %}
+
+{#     {% for python in object_list %}#}
+{#        <li>Name: {{ python.name }}, Create by: {{ python.created_by }}</li>#}
+{#    {% endfor %}#}
+{% endblock %}
