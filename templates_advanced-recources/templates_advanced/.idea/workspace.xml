@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b9a3245-44e9-4adb-855d-914c9c15be64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cbv/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pythons_app/migrations/0004_python_created_by.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636/storage_v2/_src_/database/python_wiki_db.Cp90BA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636/storage_v2/_src_/database/python_wiki_db.Cp90BA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/accounts/migrations/0002_alter_userprofile_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/accounts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pythons_app/migrations/0005_remove_python_created_by.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/pestagram/.idea/dataSources/462d6b79-3395-4ab1-afd0-c8f10971bfc0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/.idea/dataSources/462d6b79-3395-4ab1-afd0-c8f10971bfc0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/pestagram/.idea/dataSources/462d6b79-3395-4ab1-afd0-c8f10971bfc0/storage_v2/_src_/database/pestagram_db.-zD5dA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/.idea/dataSources/462d6b79-3395-4ab1-afd0-c8f10971bfc0/storage_v2/_src_/database/pestagram_db.-zD5dA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/pestagram/common/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/common/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/pestagram/pestagram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/pestagram/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/pestagram/pestagram/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/pestagram/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/pestagram/pets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/pets/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/pestagram/templates/landing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/templates/landing_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/pestagram/templates/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../djangoProject/pestagram/templates/partials/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_auth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_auth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_auth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_auth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_auth/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pythons_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythons_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythons_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythons_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pythons_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythons_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/python_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/python_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_advanced/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates_advanced/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_advanced/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates_advanced/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -96,7 +105,8 @@
       <workItem from="1624202017884" duration="3386000" />
       <workItem from="1624899812996" duration="8411000" />
       <workItem from="1625073018293" duration="27000" />
-      <workItem from="1625163043006" duration="14724000" />
+      <workItem from="1625163043006" duration="19415000" />
+      <workItem from="1625398125538" duration="2067000" />
     </task>
     <servers />
   </component>
