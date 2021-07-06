@@ -1,51 +1,63 @@
-{% extends 'shared/base.html'%}
+{% extends 'shared/base.html' %}
 {% block site-content %}
 
-<div class="container">
-    <div class="d-flex">
-        <div class="d-inline p-2 w-50">
-            <img src="{{ pet.image.url }}" class="w-50 rounded mx-auto d-block">
-        </div>
-        <div class="d-inline p-2 w-50">
-            <div class="d-flex justify-content-between">
-                <h5><u>Type:</u> {{ pet.type }}</h5>
-                <h5><u>Name:</u> {{ pet.name }}</h5>
-                <h5><u>Age:</u> {{ pet.age }}</h5>
+    <div class="container">
+        <div class="d-flex">
+            <div class="d-inline p-2 w-50">
+                <img src="{{ pet.image.url }}" class="w-50 rounded mx-auto d-block">
             </div>
-            <p class="mt-2">Description: {{ pet.description }}</p>
-            <div>
-                <a href="{% url 'edit pet' pet.id %}" class="btn btn-primary mx-auto">Edit</a>
-                <a href="{% url 'delete pet' pet.id %}" class="btn btn-danger mx-auto">Delete</a>
-            </div>
-            <a href="{% url 'pet like' pet.id %} "><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-            <p class="mt-2">Likes: {{ pet.like_count }}</p>
-        </div>
-    </div>
-    <div class="d-block" style="background-color: #f1e3e3; padding:2%">
-        {% if pet.comment_set.count > 0 %}
-            {% for comment in pet.comment_set.all %}
-                <div class="box">
-                    <h5><em>{{ comment.text }}</em></h5>
-                    <hr>
+            <div class="d-inline p-2 w-50">
+                <div class="d-flex justify-content-between">
+                    <h5><u>Type:</u> {{ pet.type }}</h5>
+                    <h5><u>Name:</u> {{ pet.name }}</h5>
+                    <h5><u>Age:</u> {{ pet.age }}</h5>
+                    <h5><u>Owner:</u> {{ pet.user.user.username }}</h5>
                 </div>
-            {% endfor %}
-        {% else %}
-            <div class="box">
-                <h3>There are no comments for this pet. </h3>
-            </div>
-        {% endif %}
-        <div class="box">
-            <form method="post" action="{% url 'pet detail' pet.id %}">
-                {% csrf_token %}
-                <div class="form-group">
-                    <label for="id_comment">Comment</label>
-                    {{ form.comment }}
-                </div>
-                <button class="btn btn-primary mt-2" type="submit">Add comment</button>
-            </form>
-        </div>
-    </div>
+                <p class="mt-2">Description: {{ pet.description }}</p>
 
-</div>
+                <div>
+                    {% if can_delete_or_edit %}
+                        <a href="{% url 'edit pet' pet.id %}" class="btn btn-primary mx-auto">Edit</a>
+                        <a href="{% url 'delete pet' pet.id %}" class="btn btn-danger mx-auto">Delete</a>
+                    {% endif %}
+                </div>
+                {% if can_like %}
+                    {% if has_liked %}
+                        <a href="{% url 'pet like' pet.id %}"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                        {% else %}
+                    <a href="{% url 'pet like' pet.id %} "><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        {% endif %}
+                {% endif %}
+                <p class="mt-2">Likes: {{ pet.like_count }}</p>
+            </div>
+        </div>
+        <div class="d-block" style="background-color: #f1e3e3; padding:2%">
+            {% if pet.comment_set.count > 0 %}
+                {% for comment in pet.comment_set.all %}
+                    <div class="box">
+                        <h5><em>{{ comment.text }}</em></h5>
+                        <hr>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="box">
+                    <h3>There are no comments for this pet. </h3>
+                </div>
+            {% endif %}
+            {% if can_comment %}
+                <div class="box">
+                    <form method="post" action="{% url 'pet detail' pet.id %}">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="id_comment">Comment</label>
+                            {{ form.comment }}
+                        </div>
+                        <button class="btn btn-primary mt-2" type="submit">Add comment</button>
+                    </form>
+                </div>
+            {% endif %}
+        </div>
+
+    </div>
 {% endblock %}
 

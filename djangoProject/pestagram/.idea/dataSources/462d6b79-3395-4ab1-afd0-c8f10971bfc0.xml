@@ -827,7 +827,7 @@ false Zulu
 13158||-9223372036854775808|U|G
 13158||10|U|G</Grants>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1658</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1713</IntrospectionStateNumber>
       <Relations>sequence|table|17043|17045|1
 sequence|table|17054|17056|1
 sequence|table|17064|17066|1
@@ -2465,7 +2465,7 @@ sequence|table|16837|16839|1
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1659</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1714</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="26" parent="7" name="plpgsql">
@@ -62736,12 +62736,12 @@ sequence|table|16837|16839|1
     <table id="5172" parent="25" name="pets_like">
       <ObjectId>17224</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>773</StateNumber>
+      <StateNumber>1685</StateNumber>
     </table>
     <table id="5173" parent="25" name="pets_pet">
       <ObjectId>17213</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1149</StateNumber>
+      <StateNumber>1685</StateNumber>
     </table>
     <check id="5174" parent="38" name="cardinal_number_domain_check">
       <ObjectId>13172</ObjectId>
@@ -111731,7 +111731,14 @@ model</ColNames>
       <StateNumber>773</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="16255" parent="5172" name="pets_like_pkey">
+    <column id="16255" parent="5172" name="user_id">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1685</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="16256" parent="5172" name="pets_like_pkey">
       <ObjectId>17228</ObjectId>
       <StateNumber>773</StateNumber>
       <ColNames>id</ColNames>
@@ -111741,7 +111748,7 @@ model</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <index id="16256" parent="5172" name="pets_like_pet_id_4e20e679">
+    <index id="16257" parent="5172" name="pets_like_pet_id_4e20e679">
       <ObjectId>17235</ObjectId>
       <StateNumber>773</StateNumber>
       <ColNames>pet_id</ColNames>
@@ -111749,14 +111756,22 @@ model</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="16257" parent="5172" name="pets_like_pkey">
+    <index id="16258" parent="5172" name="pets_like_user_id_ca4a6ce3">
+      <ObjectId>18607</ObjectId>
+      <StateNumber>1685</StateNumber>
+      <ColNames>user_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="16259" parent="5172" name="pets_like_pkey">
       <ObjectId>17229</ObjectId>
       <StateNumber>773</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>pets_like_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="16258" parent="5172" name="pets_like_pet_id_4e20e679_fk_pets_pet_id">
+    <foreign-key id="16260" parent="5172" name="pets_like_pet_id_4e20e679_fk_pets_pet_id">
       <ObjectId>17230</ObjectId>
       <StateNumber>773</StateNumber>
       <ColNames>pet_id</ColNames>
@@ -111768,7 +111783,19 @@ model</ColNames>
       <RefKeyName>pets_pet_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="16259" parent="5173" name="id">
+    <foreign-key id="16261" parent="5172" name="pets_like_user_id_ca4a6ce3_fk_accounts_userprofile_id">
+      <ObjectId>18596</ObjectId>
+      <StateNumber>1685</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableId>18534</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>accounts_userprofile</RefTableName>
+      <RefKeyName>accounts_userprofile_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="16262" parent="5173" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -111776,42 +111803,49 @@ model</ColNames>
       <DefaultExpression>nextval(&apos;pets_pet_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="16260" parent="5173" name="type">
+    <column id="16263" parent="5173" name="type">
       <Position>2</Position>
       <DataType>varchar(7)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>773</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="16261" parent="5173" name="name">
+    <column id="16264" parent="5173" name="name">
       <Position>3</Position>
       <DataType>varchar(6)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>773</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="16262" parent="5173" name="age">
+    <column id="16265" parent="5173" name="age">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>773</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="16263" parent="5173" name="description">
+    <column id="16266" parent="5173" name="description">
       <Position>5</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>773</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="16264" parent="5173" name="image">
+    <column id="16267" parent="5173" name="image">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1165</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="16265" parent="5173" name="pets_pet_pkey">
+    <column id="16268" parent="5173" name="user_id">
+      <Position>7</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1685</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="16269" parent="5173" name="pets_pet_pkey">
       <ObjectId>17220</ObjectId>
       <StateNumber>1149</StateNumber>
       <ColNames>id</ColNames>
@@ -111821,12 +111855,32 @@ model</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="16266" parent="5173" name="pets_pet_pkey">
+    <index id="16270" parent="5173" name="pets_pet_user_id_1e6577d7">
+      <ObjectId>18608</ObjectId>
+      <StateNumber>1685</StateNumber>
+      <ColNames>user_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="16271" parent="5173" name="pets_pet_pkey">
       <ObjectId>17221</ObjectId>
       <StateNumber>773</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>pets_pet_pkey</UnderlyingIndexName>
     </key>
+    <foreign-key id="16272" parent="5173" name="pets_pet_user_id_1e6577d7_fk_accounts_userprofile_id">
+      <ObjectId>18602</ObjectId>
+      <StateNumber>1685</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableId>18534</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>accounts_userprofile</RefTableName>
+      <RefKeyName>accounts_userprofile_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

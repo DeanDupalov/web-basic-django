@@ -19,7 +19,7 @@
                 <a class="nav-link" href="{% url 'profile page' user.id %}">{{ user.username }}</a>
                 </li>
                 <li>
-                <a class="nav-link" href="{% url 'logout'  %}">Sign Out</a>
+                <a class="nav-link" href="{% url 'signout user'  %}">Sign Out</a>
                 </li>
             {% else %}
             <li class="nav-item">
