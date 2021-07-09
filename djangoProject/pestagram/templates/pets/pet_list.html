@@ -1,27 +1,32 @@
 {% extends 'shared/base.html' %}
 
-{% block site-content %}
-<h1 class='text-center'>All pet photos</h1>
-<div class="container">
-    {% if pet %}
-        <div class="row">
-        {% for p in pet %}
+{% load capitalize_filter %}
+{% load pets %}
 
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ p.image.url }}" class="card-img-top" alt="photo">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ p.type }} {{ p.name }}, Age: {{ p.age }}</h5>
-                            <p class="card-text">{{ p.description }}</p>
-                            <a href="{% url 'pet detail' p.id %}" class="btn btn-primary">See details</a>
+
+{% block site-content %}
+    <h1 class='text-center'>All pet photos</h1>
+    <div class="container">
+    {% block sidebar %}{% pet_counter %}{% endblock%}
+        {% if pet %}
+            <div class="row">
+                {% for p in pet %}
+
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ p.image.url }}" class="card-img-top" alt="photo">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ p.type }} {{ p.name }}, Age: {{ p.age }}</h5>
+                                <p class="card-text">{{ p.description|capitalize }}</p>
+                                <a href="{% url 'pet detail' p.id %}" class="btn btn-primary">See details</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-        {% endfor %}
-        </div>
-    {% else %}
-        <h2>NO Pets</h2>
-    {% endif %}
-</div>
-{% endblock  %}
+                {% endfor %}
+            </div>
+        {% else %}
+            <h2>NO Pets</h2>
+        {% endif %}
+    </div>
+{% endblock %}

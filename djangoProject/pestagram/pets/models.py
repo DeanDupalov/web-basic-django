@@ -31,8 +31,22 @@ class Pet(models.Model):
         verbose_name_plural = 'pets'
 
 
+"""
+     Добавяме повече от една снимка. Примерно на профила
+"""
+
+
+class PetImage(models.Model):
+    image = models.ImageField(
+        upload_to='pet_images'
+    )
+    is_selected = models.BooleanField(
+        default=False
+    )
+    pet = models.ForeignKey(Pet, on_delete=models.CASCADE)
+
+
 class Like(models.Model):
     pet = models.ForeignKey(Pet, on_delete=models.CASCADE)
     # test = models.CharField(max_length=3, default='foo')
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-

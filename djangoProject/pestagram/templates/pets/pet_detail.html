@@ -1,6 +1,8 @@
 {% extends 'shared/base.html' %}
 {% block site-content %}
 
+    {% load pets %}
+
     <div class="container">
         <div class="d-flex">
             <div class="d-inline p-2 w-50">
@@ -32,6 +34,7 @@
             </div>
         </div>
         <div class="d-block" style="background-color: #f1e3e3; padding:2%">
+            <p>Comments: {% comments_counter %} </p>
             {% if pet.comment_set.count > 0 %}
                 {% for comment in pet.comment_set.all %}
                     <div class="box">

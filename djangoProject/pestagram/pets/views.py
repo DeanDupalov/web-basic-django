@@ -85,7 +85,7 @@ def create_pet_view(request):
 
     else:
         form = PetCreateForm(request.POST, request.FILES)
-     
+
         if form.is_valid():
             pet = form.save()
             pet.save()
