@@ -14,6 +14,4 @@ class BookDetailsApiView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = BookSerializer
 
     def perform_update(self, serializer):
-
-
         return super().perform_update(serializer)

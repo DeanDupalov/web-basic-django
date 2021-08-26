@@ -2,61 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9fc876-d97a-45d8-8c13-d1ac0c7a019f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../djangoProject/books_REST/books_REST/books_api/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../djangoProject/books_REST/books_REST/books_api/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/dataSources/3026dc64-a41e-4415-8be4-3f5a735fc636.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/templates_advanced.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/templates_advanced.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/notes/note/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/notes/note/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/cbv/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/core/mixins/group_required_mixin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/core/mixins/group_required_mixin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/python_auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0002_alter_python_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0002_alter_python_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0003_alter_python_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0003_alter_python_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0004_python_created_by.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0004_python_created_by.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0005_remove_python_created_by.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/migrations/0005_remove_python_created_by.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/pythons_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/requirments.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/auth/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/cbv/create_pet.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/cbv/create_pet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/cbv/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/cbv/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/cbv/index_cbv.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/cbv/index_cbv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/comman/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/comman/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/comman/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/comman/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/python_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates/python_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates_advanced/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates_advanced/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates_advanced/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates_advanced/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates_advanced/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates_advanced/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates_advanced/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../templates_advanced-recources/templates_advanced/templates_advanced/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../djangoProject/pestagram" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,6 +35,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625919872114</updated>
       <workItem from="1625919874238" duration="31000" />
+      <workItem from="1626207484010" duration="3581000" />
     </task>
     <servers />
   </component>
